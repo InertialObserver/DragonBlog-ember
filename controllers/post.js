@@ -9,7 +9,7 @@ DragonBlog.PostController = Ember.ObjectController.extend ({
       this.set('isEditing', false);
     },
     delete: function() {
-      this.set(confirm('Are you sure?')); {
+      if (confirm('Are you sure?')) {
         this.get('model').destroyRecord();
         this.transitionToRoute('posts');
       }

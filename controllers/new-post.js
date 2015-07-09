@@ -5,10 +5,10 @@ DragonBlog.NewPostController = Ember.Controller.extend({
         title: this.get('title'),
         body: this.get('body')
       });
-      newPost.title = this.get('title');
-      newPost.body = this.get('body');
-      this.set('title', '');
-      this.set('body', '');
+      // newPost.title = this.get('title');
+      // newPost.body = this.get('body');
+      // this.set('title', '');
+      // this.set('body', '');
       newPost.save();
       this.transitionToRoute('posts');
     }
