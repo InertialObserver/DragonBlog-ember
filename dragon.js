@@ -1,0 +1,1 @@
+DragonBlog = Ember.Application.create()
