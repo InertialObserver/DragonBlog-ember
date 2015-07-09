@@ -3,3 +3,11 @@
 <p>Dragon blog is the premiere blog for the intense community of dragon coders, programmers, and developers.</p>
 
 <button class="btn btn-primary" {{action 'showRealName'}}>Click here to learn the Dragon's real name</button>
+
+{{#if isPictureShowing}}
+<button class="btn btn-info" {{action 'hidePicture'}}> Hide that face if you can't handle it!</button>
+<p><img
+  src="css/dragon.jpg"></p>
+  {{else}}
+    <button class="btn btn-info" {{action 'showPicture'}}>Click here to see a picture</button>
+  {{/if}}
